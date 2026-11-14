@@ -1,6 +1,6 @@
 #ifndef KOS_H
 #define KOS_H
-//pa i
+
 typedef struct {
     int nomor;
     char tipe[30];
