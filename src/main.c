@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "kos.h"
+#include "fitur.h"
 
 int main() {
     Kamar daftarKamar[10] = {
