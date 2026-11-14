@@ -1,6 +1,6 @@
 #ifndef KOS_H
 #define KOS_H
-
+//pa i
 typedef struct {
     int nomor;
     char tipe[30];
@@ -15,11 +15,16 @@ typedef struct {
     int durasi;
 } Tamu;
 
-void tampilkanKamar(Kamar daftarkamar[], int jumlahKamar);
-void tampilkanTamu(Tamu daftatTamu[], int jumlahTamu);
+void tampilkanKamar(Kamar daftarKamar[], int jumlahKamar);
+void tampilkanTamu(Tamu daftarTamu[], int jumlahTamu);
+
 void reservasiKamar(Kamar daftarKamar[], Tamu daftarTamu[], int jumlahKamar, int *jumlahTamu);
-void checkout();
-void cetakInvoice();
+void checkout(Kamar daftarKamar[], Tamu daftarTamu[], int jumlahKamar, int *jumlahTamu);
+void cetakInvoice(Kamar daftarKamar[], Tamu daftarTamu[], int jumlahKamar, int jumlahTamu);
+
 void simpanKamar(Kamar daftarKamar[], int jumlahKamar);
+int muatKamar(Kamar daftarKamar[]);
+void simpanTamu(Tamu daftarTamu[], int jumlahTamu);
+int muatTamu(Tamu daftarTamu[]);
 
 #endif
